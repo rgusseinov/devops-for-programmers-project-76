@@ -12,3 +12,5 @@ encrypt:
 
 decrypt:
 	ansible-vault decrypt --vault-password-file vault_password group_vars/webservers/vault.yml
+
+# test
