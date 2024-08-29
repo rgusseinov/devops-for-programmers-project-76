@@ -23,7 +23,7 @@
         
        
         
-#- hosts: webservers
-#  roles:
-#   - { role: datadog.datadog, become: yes }
-# tags: datadog
+- hosts: webservers
+  roles:
+   - { role: datadog.datadog, become: yes }
+  tags: datadog

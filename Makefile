@@ -1,5 +1,5 @@
 setup:
-	ansible-playbook playbook.yml -i inventory.ini --ask-vault-password
+	ansible-playbook playbook_setup.yml -i inventory.ini --ask-vault-password
 
 deploy:
 	ansible-playbook playbook.yml -i inventory.ini --ask-vault-password
