@@ -6,7 +6,7 @@
   tasks:
     - name: create env
       ansible.builtin.template:
-        src: env.j2
+        src: templates/env.j2
         dest: .env
         mode: "0644"
     - name: Запустить Redmine в контейнере
