@@ -8,7 +8,6 @@
 1. Операционная система: Linux (рекомендуется Ubuntu)
 2. Python: Версия 3.12 или выше
 3. Ansible: Установлен на управляющем узле
-3. Docker: Установлен на управляемых узлах
 4. Ansible Collections: community.docker
 6. Ansible Roles: geerlingguy.pip, datadog.datadog
 

@@ -1,11 +1,11 @@
 setup:
-	ansible-playbook playbook_setup.yml -i inventory.ini --ask-vault-password
+	ansible-playbook playbook_setup.yml --vault-password-file vault_password -i inventory.ini
 
 deploy:
-	ansible-playbook playbook.yml -i inventory.ini --ask-vault-password
+	ansible-playbook playbook.yml --vault-password-file vault_password -i inventory.ini
 
 monitoring:
-	ansible-playbook playbook.yml -i inventory.ini --ask-vault-password
+	ansible-playbook playbook.yml --vault-password-file vault_password -i inventory.ini
 
 encrypt:
 	ansible-vault encrypt --ask-vault-password group_vars/webservers/vault.yml
